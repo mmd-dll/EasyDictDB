@@ -1,4 +1,4 @@
-# EasyDictDB
+# PyEasyDB
 A simple library to save and load Python dictionaries in SQLite.
 
 
@@ -26,26 +26,26 @@ A simple library to save and load Python dictionaries in SQLite.
 نصب از طریق ترمینال
 
 ```bash
-  pip install EasyDictDB
+  pip install PyEasyDB
 ```
 
 ## نمونه کد
 - ذخیره دیتا
 ```python
-from EasyDictDB import save,load
+from PyEasyDB import save,load
 
-data = {'name':'mohammad reza','age':18,'alave':True}
+data = {'name':'mohammad','age':18}
 
-save(data,'my_data')
-#در اینجا یک فایل data_store.db ساخته میشود و دیتا توش ذخیره میشه
+save(data,'user1')
+#در اینجا یک فایل data.db ساخته میشود و دیتا توش ذخیره میشه
 
 ```
 
 - لود کردن دیتا
 
 ```python
-from EasyDictDB import save,load
+from PyEasyDB import save,load
 
-data = load('my_data')
-# اگه دیتا وجود داشته باشه دیتا = {'name':'mohammad reza','age':18,'alave':True}
+data = load('user1')
+# اگه دیتا وجود داشته باشه دیتا = {'name':'mohammad','age':18}
 ```
