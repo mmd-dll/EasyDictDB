@@ -63,4 +63,5 @@ def load(dict_id):
     else:
         return None
 
+
 initialize_db()
